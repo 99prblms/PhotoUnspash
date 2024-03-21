@@ -38,8 +38,8 @@ class CustomCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
-            addSubviews()
-            setupFriendImageView()
+        addSubviews()
+        setupFriendImageView()
     }
     
     required init?(coder: NSCoder) {
