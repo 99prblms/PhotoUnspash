@@ -1,5 +1,5 @@
 //
-//  GeneralView.swift
+//  HomePageView.swift
 //  PhotoUnspash
 //
 //  Created by Владислав Наумов on 10.02.2024.
