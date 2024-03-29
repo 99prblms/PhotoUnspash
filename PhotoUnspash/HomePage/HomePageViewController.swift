@@ -9,15 +9,18 @@ import UIKit
 
 class HomePageViewController: UIViewController {
     
-    lazy var mainView = HomePageView()
-    lazy var mainModel = HomePageModel()
+    private lazy var mainView = HomePageView()
+    private lazy var mainModel = HomePageModel()
     private var timer: Timer?
     private var photos = [UnsplashPhoto]()
-    var mainApiManager = ApiManager()
-    var mainDataFetcher = DataFetcher()
+    private var mainApiManager = ApiManager()
+    private var mainDataFetcher = DataFetcher()
     
     override func loadView() {
         view = mainView
+        
+        // MARK: - Initializers
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +30,15 @@ class HomePageViewController: UIViewController {
         self.setupSearchBar()
     }
     
+    // MARK: - Private Methods
+    
     private func setupSearchBar() {
         let searchBarContr = UISearchController(searchResultsController: nil)
         navigationItem.searchController = searchBarContr
         searchBarContr.searchBar.delegate = self
     }
 }
+
 //    MARK: - UICollectionViewDataSource Methods
 
 extension HomePageViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

@@ -73,20 +73,28 @@
 		1997148F2B77637C0049FBE3 /* PhotoUnspash */ = {
 			isa = PBXGroup;
 			children = (
-				199714902B77637C0049FBE3 /* AppDelegate.swift */,
-				199714922B77637C0049FBE3 /* SceneDelegate.swift */,
-				199714A42B7764130049FBE3 /* HomePageView.swift */,
-				199714A62B7764200049FBE3 /* HomePagelModel.swift */,
-				199714942B77637C0049FBE3 /* HomePageViewController.swift */,
+				19F756DE2BB7192D00493D4A /* HomePage */,
 				194277882B7D3121008CA315 /* DataFetcher.swift */,
 				199714A82B77682F0049FBE3 /* CustomCell.swift */,
 				199714AA2B776EB50049FBE3 /* ApiManager.swift */,
 				199714AC2B77F2C60049FBE3 /* ApiData.swift */,
+				199714902B77637C0049FBE3 /* AppDelegate.swift */,
+				199714922B77637C0049FBE3 /* SceneDelegate.swift */,
 				199714992B77637F0049FBE3 /* Assets.xcassets */,
 				1997149B2B77637F0049FBE3 /* LaunchScreen.storyboard */,
 				1997149E2B77637F0049FBE3 /* Info.plist */,
 			);
 			path = PhotoUnspash;
+			sourceTree = "<group>";
+		};
+		19F756DE2BB7192D00493D4A /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				199714A42B7764130049FBE3 /* HomePageView.swift */,
+				199714942B77637C0049FBE3 /* HomePageViewController.swift */,
+				199714A62B7764200049FBE3 /* HomePagelModel.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 		90BFE0F3BBD7EDC8CF6EEB64 /* Frameworks */ = {
