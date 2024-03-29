@@ -19,7 +19,7 @@ class HomePageViewController: UIViewController {
     override func loadView() {
         view = mainView
         
-// MARK: - Initializers
+        // MARK: - Initializers
         
     }
     override func viewDidLoad() {
@@ -30,7 +30,7 @@ class HomePageViewController: UIViewController {
         self.setupSearchBar()
     }
     
-// MARK: - Private Methods
+    // MARK: - Private Methods
     
     private func setupSearchBar() {
         let searchBarContr = UISearchController(searchResultsController: nil)
@@ -38,6 +38,7 @@ class HomePageViewController: UIViewController {
         searchBarContr.searchBar.delegate = self
     }
 }
+
 //    MARK: - UICollectionViewDataSource Methods
 
 extension HomePageViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
