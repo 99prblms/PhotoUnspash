@@ -10,14 +10,13 @@ import UIKit
 class HomePageView: UIView {
     
     public var collectionView: UICollectionView = {
-        
         let collectionViewLayout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
     
-    func setupCollectionView() {
+    private func setupCollectionView() {
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: topAnchor),
             collectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
@@ -25,11 +24,16 @@ class HomePageView: UIView {
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10)
         ])
     }
+    
+    // MARK: - Initializers
+    
     init() {
         super.init(frame: .zero)
+        backgroundColor = .systemBackground
         addSubviews()
         setupCollectionView()
     }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

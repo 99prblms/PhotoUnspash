@@ -8,7 +8,6 @@ import SDWebImage
 class CustomCell: UICollectionViewCell {
     
     static let reuseId = "Cell"
-    
     public var friendImageView = UIImageView()
     
     var unsplashPhoto: UnsplashPhoto! {
@@ -34,7 +33,6 @@ class CustomCell: UICollectionViewCell {
     func addSubviews() {
         addSubview(friendImageView)
     }
-    
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
